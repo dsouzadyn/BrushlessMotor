@@ -7,13 +7,13 @@ Brushless Motor Library For Arduino
     #include <BrushlessMotor.h>
 
     ...
-    BrushlessMotor motorOne(9);  // Create brushless motor object
+    BrushlessMotor motorOne(9);  // Create brushless motor object with pin
     ...
 
     void setup()
     {
       ...
-      motorOne.init();  // Initialize Pin
+      motorOne.init();  // Initialize Motor
       ...
     }
 
