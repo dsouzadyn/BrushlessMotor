@@ -13,7 +13,7 @@ Brushless Motor Library For Arduino
     void setup()
     {
       ...
-      motorOne.init();  // Initialize Motor
+      motorOne.init(<max_value>, <min_value>);  // Initialize Motor
       ...
     }
 

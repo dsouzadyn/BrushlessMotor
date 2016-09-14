@@ -8,7 +8,7 @@ class BrushlessMotor
   public:
     BrushlessMotor(int pin);
     ~BrushlessMotor();
-    void init();
+    void init(int max, int min);
     void write(int v);
   private:
     int _pin, _value;

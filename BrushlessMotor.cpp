@@ -13,7 +13,7 @@ BrushlessMotor::~BrushlessMotor()
   ESC.detach();
 }
 
-void BrushlessMotor::init()
+void BrushlessMotor::init(int max, int min)
 {
   ESC.attach(_pin);
 }
