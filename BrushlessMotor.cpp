@@ -15,7 +15,11 @@ BrushlessMotor::~BrushlessMotor()
 
 void BrushlessMotor::init(int max, int min)
 {
+  _max = max;
+  _min = min;
   ESC.attach(_pin);
+  ESC.writeMicroseconds(_max);
+  ESC.writeMicroseconds(_min);
 }
 
 void BrushlessMotor::write(int v)

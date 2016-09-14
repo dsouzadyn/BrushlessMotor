@@ -11,7 +11,7 @@ class BrushlessMotor
     void init(int max, int min);
     void write(int v);
   private:
-    int _pin, _value;
+    int _pin, _value, _min, _max;
     Servo ESC;
 };
 
